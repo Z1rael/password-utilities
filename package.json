@@ -1,6 +1,6 @@
 {
   "name": "@fsd24229/password-utilities",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A small package that generates a string password and additionally offers a check whether a password is strong or not",
   "keywords": [
     "password",
