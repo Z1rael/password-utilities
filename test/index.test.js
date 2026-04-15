@@ -26,14 +26,21 @@ describe('isStrongPassword', () => {
 
 describe('generateStrongPassword', () => {
     test('generate a length 1 password', () => {
-        expect( generateStrongPassword(1).length == 1)
+        expect(()=>generateStrongPassword(1)).toThrow(Error);
     })
 
     test('check if a generated password is strong', () => {
-        expect(isStrongPassword(generateStrongPassword(8)));
+        expect(isStrongPassword(generateStrongPassword(8))).toEqual(true);
     })
 
+
     test('check if a generated password is not strong', () => {
-        expect(isStrongPassword(generateStrongPassword(7)));
+        expect(()=>isStrongPassword(generateStrongPassword(7))).toThrow(Error);
     })
+
+    test('check if a 7-letter pwd is not strong', () => {
+        expect(isStrongPassword('s4vn4a3')).toEqual(false);
+    })
+
+
 })
