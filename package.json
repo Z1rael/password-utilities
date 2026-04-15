@@ -1,0 +1,20 @@
+{
+  "name": "@fsd24229/password-utilities",
+  "version": "0.1.0",
+  "description": "A small package that generates a string password and additionally offers a check whether a password is strong or not",
+  "keywords": [
+    "password",
+    "generation",
+    "check"
+  ],
+  "license": "MIT",
+  "author": "Leonardo Barrientos, Felix Dilly",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
